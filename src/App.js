@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
+//import About from './components/About';
 import React, { useState } from 'react';
 import Alerts from './components/Alerts';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+//import {
+//  BrowserRouter as Router,
+//  Routes,
+//  Route,
+//  Link
+//} from "react-router-dom";
 
 
 
@@ -75,17 +74,18 @@ function App() {
 
         return (
         <>
-            <Router>
+          {/*<Router>*/}
             <Navbar title="Prathamesh Chaudhari" mode={mode}  togglemode={togglemode} greenmode={greenmode}  redmode={redmode}/>
             <Alerts  alert={alert} />
           
             <div className="container my-3">
-            <Routes>
+            {/*<Routes>
                 <Route exact path="/about" element={<About/>}></Route>
                 <Route exact path="/" element={ <TextForm title="Munna Chaudhari" mode={mode} showalert={showalert}/>}></Route>
-            </Routes>
+            </Routes>*/}
+            <TextForm title="Munna Chaudhari" mode={mode} showalert={showalert}/>
             </div>
-            </Router>
+            {/*</Router>*/}
         </>
         );
       }

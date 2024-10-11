@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
@@ -8,22 +8,22 @@ export default function Navbar(props) {
    <nav className="navbar navbar-expand-lg " style={{ backgroundColor: `${props.mode}`,color: "white" }}>
 
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/" style={{color:`${props.mode==='white'?'black':'white'}`}}>
+      <a className="navbar-brand" href="#" style={{color:`${props.mode==='white'?'black':'white'}`}}>
          {props.title}
-      </Link>
+      </a>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/" style={{color:`${props.mode==='white'?'black':'white'}`}}>
+            <a className="nav-link active" aria-current="page" href="#" style={{color:`${props.mode==='white'?'black':'white'}`}}>
               Home
-            </Link>
+            </a>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/about" style={{color:`${props.mode==='white'?'black':'white'}`}}>
+          {/*<li className="nav-item">
+            <a className="nav-link" href="/about" style={{color:`${props.mode==='white'?'black':'white'}`}}>
               About
-            </Link>
-          </li>
+            </a>
+          </li>*/}
           </ul>
 
         <div className="form-check form-switch mx-3">
