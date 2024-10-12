@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pratham/static/css/main.31d6cfe0.css",
+    "main.js": "/pratham/static/js/main.3e3fe7aa.js",
+    "static/js/453.55cbe3fd.chunk.js": "/pratham/static/js/453.55cbe3fd.chunk.js",
+    "index.html": "/pratham/index.html",
+    "main.3e3fe7aa.js.map": "/pratham/static/js/main.3e3fe7aa.js.map",
+    "453.55cbe3fd.chunk.js.map": "/pratham/static/js/453.55cbe3fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.3e3fe7aa.js"
+  ]
+}
